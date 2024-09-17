@@ -1,0 +1,192 @@
+body {
+  background-image: url('home.jpg');
+  background-size: cover;       /* Ensures the image covers the entire viewport */
+  background-position: center;  /* Centers the image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-attachment: fixed; /* Keeps the image fixed when scrolling */
+  margin: 0;                    /* Remove default body margin */
+  height: 100%;               /* Ensure body height covers viewport height */
+}
+/* Custom CSS to apply border-radius to the navbar */
+.custom-navbar {
+  border-radius: 15px; /* Adjust the value as needed */
+  overflow: hidden; /* Ensures that rounded corners are applied correctly */
+  background-color: #72393921; /* Ensure background color is also applied correctly */
+}
+
+/* Optional: Apply border-radius to the navbar-toggler for consistency */
+.custom-navbar .navbar-toggler {
+  border-radius: 50%; /* Example for rounded toggler button */
+}
+
+.rectangle1 {
+  position: absolute;
+  left: 69vh;
+  top: 16vh;
+  width: 90%;
+  height: 80%;
+  background-color: #f4f3f3;
+  box-shadow: 20px 20px 4px 0px #00000040;
+  opacity: .7;
+  padding: 13px;
+  border-radius: 10px;
+}
+.frame2 {
+  position: absolute;
+  left: 17vh;
+  top: 16vh;
+  width: 20%;
+  height: 80%;
+  flex-direction: column;
+  align-items: flex-start;
+  overflow: hidden;
+  background-color: #72393921;
+  border-radius: 10px;
+  opacity: .3;
+}
+.rectangle8.form-floating {
+  border-radius: 70px;
+  overflow: hidden; 
+    position: absolute;
+    bottom:0%;  
+    width: 90%;
+    background-color: #c6c2c2
+  }
+  .form-control.text{
+    border-radius: 40px;
+  }
+.helpSupport {
+  color: #000;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: Jost, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  position: absolute;
+  left: 39px;
+  
+  width: 150px;
+  height: min-content;
+  flex-direction: column;
+}
+.rectangle7 {
+  position: absolute;
+  left: 0;
+  top: 84px;
+  width: 100%;
+  height: 35px;
+  background-color: #4a3a3a94;
+  border-radius: 6px;
+  opacity: 5.5;
+}
+.IconPeople {
+  position: absolute;
+  left: 5px;
+  top: 75vh;
+  width: 28.16px;
+  height: 24.8924px;
+  overflow: visible;
+}
+.helpSupport {
+  color: #000;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: Jost, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  position: absolute;
+  left: 39px;
+  
+  width: 150px;
+  height: min-content;
+  flex-direction: column;
+}
+
+
+@media (max-width: 1900px){
+  .rectangle1 {
+    width: 50%;
+   
+  }
+  
+ 
+}
+@media (max-width: 1080px) {
+  .rectangle1 {
+    width: 40%;
+  
+  }
+  
+  .frame2 {
+    width: 30%;
+  }
+
+  .helpSupport {
+    font-size: 0.9rem;
+    left: 1%;
+  }
+
+  
+
+
+}
+@media (max-width: 800px) {
+  .rectangle1 {
+    width:40%;
+   
+    left:45vh
+  }
+
+  .frame2 {
+    width: 30%;
+    left:10vh
+  }
+ 
+  .helpSupport {
+    font-size: 0.9rem;
+    left: 1%;
+  }
+}
+@media (max-width: 550px) {
+  .rectangle1 {
+    width:40%;
+    
+    left:25vh
+  }
+
+  .frame2 {
+    width: 30%;
+    left:5vh
+  }
+  
+  .helpSupport {
+    font-size: 0.9rem;
+    left: 1%;
+  }
+
+  
+
+
+}
+@media (max-width: 440px) {
+  .rectangle1 {
+    display: none;
+  }
+
+  .frame2 {
+    width: 100%;
+    left:0
+  }
+
+  .helpSupport {
+    font-size: 0.8rem;
+  }
+
+  
+  .rectangle8 {
+    top: 70%;
+    width: 100%;
+  }
+
+  .IconPeople {
+    width: 20px;
+  }
+}

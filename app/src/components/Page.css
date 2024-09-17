@@ -1,0 +1,36 @@
+.chatbox{
+    border:2px solid transparent;
+    width:100%;
+    height:70px;
+    border-radius: 10px;
+    margin:6px;
+    padding:6px
+}
+.chatbox:hover{
+    background-color: rgb(189, 184, 184);
+}
+/* Flexbox item default styles */
+.d-flex {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+/* Hide the first column on small screens (width <= 600px) */
+@media (max-width: 600px) {
+    .flex-shrink-1 {
+        width:100% /* Hides the sidebar on small screens */
+    }
+
+    .p-2 {
+        display: none; /* Makes the 'Name' section take full width */
+    }
+
+    
+}
+@media (max-width: 100px) {
+    .chatbox{
+        flex-direction: column;
+    }
+
+    
+}

@@ -1,0 +1,88 @@
+body {
+    height: 100%;                 
+    margin: 0; 
+    background-image: url("login.jpg");
+    background-size: cover;    
+    background-position: center;  
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+  
+  .container {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+    color: white;
+  }
+  .user {
+    position: relative;
+    border-bottom: 2px solid white;
+  }
+  
+  .user input {
+    position: relative;
+    z-index: 1; /* Ensure input is above span */
+  }
+ .user span{
+    display: block;
+    background-color: black;
+    transition: width 0.5s; 
+    height: 2px;
+    position: absolute;
+    bottom: -2px; 
+    left: 0;
+    width: 0; 
+  
+ }
+ .user input:focus~ span{
+    width: 100%;
+ }
+  .login {
+    width: 360px;
+    height:70%; 
+    padding: 20px; 
+    border: 1px solid transparent; 
+    border-radius: 5px; 
+   background-color: rgba(248, 247, 249, 0.03);
+
+    justify-content: center;
+    font-family: josefin sans;
+  }
+  .loginname{
+        
+        margin: 7px auto ;
+        font-size: 35px;
+      
+  }
+  input {
+    width: 100%; 
+    padding: 10px; 
+    
+   
+    border-radius: 4px; 
+    top:0;
+    left:0;
+    background: none;
+    outline: none;
+    border: none;
+
+  }
+  .btn{
+    border-radius: 10px;
+    margin: 7px auto ;
+    background-color: purple;
+   color: white;
+    background-color: none;
+    
+  }
+  .password{
+  
+    margin: 5px 13px 5px auto;
+  }
+  .create{
+   
+    margin: 7px auto ;
+  }
