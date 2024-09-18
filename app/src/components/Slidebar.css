@@ -15,12 +15,14 @@
         
     
 }
-
+.slide2{
+    display: none
+}
 @media screen and (max-width: 990px) {
     .slide1 {
         display: none;
     }
-    .slide2{
-        display: block;
+    .slide2 {
+        display: inline-flex;
     }
 }

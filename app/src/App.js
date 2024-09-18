@@ -1,6 +1,6 @@
 import { memo } from 'react';
 
-
+import Login from './components/Login';
 import Page from './components/Page';
 import Main from './components/Main';
 
@@ -11,7 +11,7 @@ const App = memo(function App(props = {}) {
       <Frame1 />
     </div>*/
     <> 
-   <Main></Main>
+  <Main></Main>
    
     </>  
   );

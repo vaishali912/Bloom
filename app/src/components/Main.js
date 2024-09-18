@@ -26,18 +26,18 @@ export default function Main() {
   return (
     <div style={{height:"100%"}} >
       <div className="h-100 d-flex"  >
-        <div className='slide3' style={{width:"3.1%"}} >
+        <div className='slide3' style={{width:"6.1%"}} >
           <Slidebar handlePlusClick={handlePlusClick} elementsCount={elementsCount} />
         </div>
-        <div className="h-100 flex-fill" style={{width:"7%"}}>
-          <div className="d-flex h-100">
-            <div className="h-100 flex-fill ps-3">
+        <div className="h-100 flex-fill" >
+          
+            <div className="h-100 flex-fill ">
               <Navbar bgchange={changebg} ></Navbar>
              <Page elementsCount={elementsCount}></Page>
 
 
             </div>
-          </div>
+          
         </div>
       </div>
     </div>
