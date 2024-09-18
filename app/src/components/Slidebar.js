@@ -1,57 +1,79 @@
 import React from 'react'
 import "./Slidebar.css"
 import { useState } from 'react';
-export default function Slidebar({handlePlusClick,elementsCount}) {
-  
-  
-    return (
-    <>
-     <div className=" slide  position-fixed overflow-hidden start-0 text-white"  style= {{width: "64px", zIndex: "1", padding: "1rem",alignItems:"center",overflowY: "auto",backgroundColor: "#001f3f"}}>
-    <button className="fa-solid fa-plus "
-    style={{
-      border: "2px solid transparent",
-      padding: "4px",
-      fontSize:"30px",
-      borderRadius: "5px",
-      backgroundColor: "rgba(255, 255, 255, 0.15)",
-      margin:"7px 5px 5px "
-    }}type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
-  </button>
-  <div class="collapse collapse-horizontal" id="collapseWidthExample">
-        <div className=" slide  position-fixed overflow-hidden start-0 text-white" 
-     style= {{width: "64px", zIndex: "1", padding: "1rem", display: "flex", flexDirection: "column",gap: "1rem", height: "100vh",alignItems:"center",overflowY: "auto",backgroundColor: "#001f3f"}}>
-      <div><i
-    className="fa-solid fa-plus"
-    style={{
-      border: "2px solid transparent",
-      padding: "4px",
-      fontSize:"30px",
-      borderRadius: "5px",
-      backgroundColor: "rgba(255, 255, 255, 0.15)",
-      margin:"7px 5px 5px "
-    }}
-    onClick={handlePlusClick}
-  /></div>
-      <div>
-  {Array(elementsCount).fill(0).map((_, index) => (
-    <div key={index} ckassName = "name"style={{
-      border: "2px solid transparent",
-      padding: "5px 13px",  
-      borderRadius: "8px",
-      backgroundColor: "rgba(255, 255, 255, 0.15)",
-      margin:"7px 5px 5px 5px ",
-      marginBottom:"10px",
-    }}>V</div>
-  ))}
-  
-</div>
-</div>
-</div>
-</div>
-</>
+export default function Slidebar({ handlePlusClick, elementsCount }) {
+
+
+  return (
+    <div className=" slide">
+      <div className=" slide1  start-0 text-white" >
+        <div className='plus'><i
+          className="fa-solid fa-plus"
+          style={{
+            border: "2px solid transparent",
+            padding: "4px",
+            fontSize: "30px",
+            borderRadius: "5px",
+
+            margin: "7px 5px 5px "
+          }}
+          onClick={handlePlusClick}
+        /></div>
+        <div>
+          {Array(elementsCount).fill(0).map((_, index) => (
+            <div key={index} className="name" style={{
+              border: "2px solid transparent",
+              padding: "5px 13px",
+              borderRadius: "8px",
+              backgroundColor: "rgba(255, 255, 255, 0.15)",
+              margin: "7px 5px 5px 5px ",
+              marginBottom: "10px",
+            }}>V</div>
+          ))}
+
+        </div>
+      </div>
+      <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"><i class="fa-solid fa-bars" style={{ height: "4%", fontSize: "28px", marginTop: "4px" }}></i></button>
+
+      <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel" style={{backgroundColor:"rgba(255 255 255 / 24%)"}}>
+        <div class="offcanvas-header">
+
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body" >
+          <p>
+            <div className='plus'><i
+              className="fa-solid fa-plus"
+              style={{
+                border: "2px solid transparent",
+                padding: "4px",
+                fontSize: "30px",
+                borderRadius: "5px",
+                color:"white",
+                margin: "7px 5px 5px "
+              }}
+              onClick={handlePlusClick}
+            />
+              {Array(elementsCount).fill(0).map((_, index) => (
+                <div key={index} className="name" style={{
+                  border: "2px solid transparent",
+                  padding: "5px 13px",
+                  borderRadius: "8px",
+                  color:"white",
+                  backgroundColor: "rgba(255, 255, 255, 0.15)",
+                  margin: "7px 5px 5px 5px ",
+                  marginBottom: "10px",
+                }}>V</div>
+              ))}
+            </div></p>
+        </div>
+      </div>
+    </div>
+
+
 
   );
 }
 
 
-    
+

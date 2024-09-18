@@ -1,10 +1,10 @@
 import React from 'react'
-
+import './MAIN.css'
 import { useState } from 'react'
 import Navbar from './Navbar'
 import Slidebar from './Slidebar'
-import Middel from './Middel'
-import Chatbox from './Chatbox'
+
+
 import Page from './Page'
 export default function Main() {
   const [elementsCount, setElementsCount] = useState(0);
@@ -24,18 +24,16 @@ export default function Main() {
     setElementsCount(elementsCount + 1);
   };
   return (
-    <div >
+    <div style={{height:"100%"}} >
       <div className="h-100 d-flex"  >
-        <div className="me-5">
+        <div className='slide3' style={{width:"3.1%"}} >
           <Slidebar handlePlusClick={handlePlusClick} elementsCount={elementsCount} />
         </div>
-        <div className="h-100 flex-fill">
-          <div className="d-flex gap-3 h-100">
+        <div className="h-100 flex-fill" style={{width:"7%"}}>
+          <div className="d-flex h-100">
             <div className="h-100 flex-fill ps-3">
               <Navbar bgchange={changebg} ></Navbar>
-              <div style = {{width:"100%"}}>
-              <Page></Page>
-              </div>
+             <Page elementsCount={elementsCount}></Page>
 
 
             </div>
