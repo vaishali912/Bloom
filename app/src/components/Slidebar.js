@@ -33,7 +33,7 @@ export default function Slidebar({ handlePlusClick, elementsCount }) {
 
         </div>
       </div>
-      <button class="btn btn-primary slide2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"><i class="fa-solid fa-bars" style={{ height: "4%", fontSize: "28px", marginTop: "4px" }}></i></button>
+      <button class="btn  slide2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"><i class="fa-solid fa-bars" style={{ height: "4%", fontSize: "28px", marginTop: "4px" }}></i></button>
 
       <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel" style={{backgroundColor:"rgba(255 255 255 / 24%)"}}>
         <div class="offcanvas-header">
