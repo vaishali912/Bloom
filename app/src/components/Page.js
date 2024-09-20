@@ -3,12 +3,10 @@ import "./Page.css"
 export default function Page({elementsCount}) {
     const [text,settext]=useState("enter text");
     const textchng = (event) => {
-        
-      
         settext(event.target.value); 
-        
+       
       };
-     
+      
     return (
         <div className='contanier' style={{marginTop:"10px"}}>
             <div className=" d-flex rectangle6" >
@@ -16,11 +14,12 @@ export default function Page({elementsCount}) {
                     <div className="name" style={{
                         border: "2px solid transparent",
                         
-                       
-                        margin: "2px 7px 9px 7px ",
-                        
-                        width:"14%"
-                    }}><img src = "./avatar.png" alt ="error" style={{height:"25px",width:"25px",margin:"0px 18px 10px 0px"}}></img></div>
+                    }}>
+                        <div style={{display:"flex"}}>
+                            <div><img src = "./avatar.png" alt ="error" style={{height:"36px",width:"43px"}}></img></div>
+                            <div><img src = "./avatar.png" alt ="error" style={{height:"36px",width:"43px"}}></img></div>
+                            <div><img src = "./avatar.png" alt ="error" style={{height:"36px",width:"43px"}}></img></div>
+                        </div></div>
                     <div>
                         <div >Name</div>
 
@@ -32,31 +31,26 @@ export default function Page({elementsCount}) {
                        <div  key={index} className="p-6 chatbox   d-flex flex-shrink-1 border-start" >
                            <div className="name" style={{
                                border: "2px solid transparent",
-                               
-                               
-                               
-                               margin: "2px 7px 9px 7px ",
-       
-                           }}> <img src = "./avatar.png" alt ="error" style={{height:"25px",width:"25px"}}></img>
+                              
+                           }}> <img src = "./avatar.png" alt ="error" style={{height:"36px",width:"25px"}}></img>
 </div>
                            <div>
                                <div >Name</div>
-
                    </div></div>))
                 ):<div></div>
               }
-
             </div>
             
             <div className='rectangle1'>
+                <div className='chat' style={{overflowY:"auto",height:"90%"}}>
                 <div className='text left'>
                     HI everyone
                 </div>
                 <div className='text right'>
                     HI everyone
+                </div>
                 </div><div className='d-flex send'>
                 <div  style={{width:"100%"}}>
-                {/*<textarea class="form-control" placeholder="Leave a comment here" value={text} aria-label="text" onChange={textchng} id="floatingTextarea" ></textarea>*/}
                  <textarea className="send1" type = "textarea" value={text} onChange={textchng} ></textarea>
                 </div>
                 <img src = "./send.png" alt ="error" ></img></div>  

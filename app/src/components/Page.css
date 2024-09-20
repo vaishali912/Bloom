@@ -17,12 +17,18 @@
   .chatbox{
     border:2px solid transparent;
     width:90%;
-    height:9%;
+    height:13%;
     border-radius: 10px;
     margin:9px;
     padding:6px;
     background-color:rgba(248, 247, 249, 0.3);
+    justify-content: center;
+    
+    flex-direction: column;
 
+}
+.chatbox div{
+    justify-content: space-between;
 }
 
 .chatbox:hover{
@@ -58,7 +64,7 @@
     background-color: rgba(255 255 255 / 90%);
     box-shadow: 20px 20px 4px 0px #00000040;
     padding:14px 14px 5px 20px;
-    overflow-y:auto ;
+   
   }
  
 
@@ -67,40 +73,29 @@
     bottom: 0%;
     width: 90%;
     justify-content: space-between;
+    align-items: center;
 }
 
 .send img{
-    height: 32px;
-    width: 30px;
+    height: 35px;
+    width: 40px;
 
 }
-.send2{
-    width: 100%;
-    padding: 10px;
-    border-radius: 4px;
-    top: 0;
-    left: 4%;
-    outline: none;
-    border: none;
-    background-color: rgb(180, 163, 163);
-    overflow-y: auto;
-    min-height:43px;
 
-  
-}
 .send1 {
-    width: 100%;
+    width: 97%;
     padding: 10px;
     border-radius: 4px;
     outline: none;
     border: none;
     background-color: rgb(225, 219, 219);
-    min-height: 43px; 
+    max-height: 35px; 
     resize: none; 
     overflow-y: auto; 
     overflow-x: hidden; 
     white-space: pre-wrap; 
     word-wrap: break-word; 
+    text-align:  center 
 }
   .send1::-webkit-scrollbar {
     display: none; 
@@ -108,6 +103,9 @@
   
   .send1 {
     scrollbar-width: none; 
+  }
+  .send1:focus{
+    text-align: left;
   }
   
   

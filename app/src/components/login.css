@@ -20,11 +20,12 @@ body {
   .user {
     position: relative;
     border-bottom: 2px solid white;
+   
   }
   
   .user input {
     position: relative;
-    z-index: 1; /* Ensure input is above span */
+    z-index: 1;
   }
  .user span{
     display: block;
@@ -50,6 +51,20 @@ body {
  box-shadow: 20px 20px rgba(0, 0, 0, 0.3);
     justify-content: center;
     font-family: josefin sans;
+    
+   
+  }
+  .login::before {
+    content: "";
+    position: absolute;
+    top: 22%;
+    left: 35%;
+    width: 30%;
+    height: 56%;
+    background-image: url("./Bloom icon.png");
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5; /* adjust the opacity value (0.5) */
   }
   .loginname{
         
