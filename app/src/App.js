@@ -1,16 +1,16 @@
 import { memo } from 'react';
 
-import Login from './components/Login';
+
+import Dashboard from './components/Dashboard';
+import Main from './components/Main';
 
 
 
 
 const App = memo(function App(props = {}) {
   return (
-    <> 
-  <Login></Login>
-   
-    </>  
+ <Dashboard></Dashboard>
+    
   );
 });
 

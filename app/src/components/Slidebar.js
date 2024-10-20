@@ -1,5 +1,5 @@
 import React from 'react'
-import "./Slidebar.css"
+
 import { useState } from 'react';
 export default function Slidebar({ handlePlusClick, elementsCount }) {
 
