@@ -1,0 +1,8 @@
+.streak {
+    transition: transform 0.3s ease-in-out; /* Smooth zoom animation */
+  }
+  
+  .streak:hover {
+    transform: scale(1.3); /* Zoom to 130% on hover */
+  }
+  

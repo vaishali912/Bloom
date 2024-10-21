@@ -1,0 +1,114 @@
+body {
+  height: 100%;                 
+  margin: 0; 
+  background-image: url("login.jpg");
+  background-size: cover;    
+  background-position: center;  
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.container {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  height: 100vh; 
+  color: white;
+}
+.user {
+  position: relative;
+  border-bottom: 2px solid white;
+}
+.user input {
+  position: relative;
+  z-index: 1;
+}
+.user span {
+  display: block;
+  background-color: black;
+  transition: width 0.5s; 
+  height: 2px;
+  position: absolute;
+  bottom: -2px; 
+  left: 0;
+  width: 0; 
+}
+.user input:focus~span {
+  width: 100%;
+}
+.login {
+  width: 24%;
+  height: 70%; 
+  padding: 20px; 
+  border: 1px solid transparent; 
+  border-radius: 14px; 
+  background-color: rgba(248, 247, 249, 0.03);
+  box-shadow: 20px 20px rgba(0, 0, 0, 0.3);
+  justify-content: center;
+  font-family: josefin sans;
+  position: relative;  
+  background-image: url("./image.png");
+  background-size: 100% 100%;
+}
+.login::before {
+  content: "";
+  position: absolute;
+  top: 22%;
+  left: 20%;
+  width: 53%;
+  height: 65%;
+  background-image: url("./Bloom icon.png");
+  background-size: cover;
+  background-position: center;
+  opacity: 0.5;  
+}
+.loginname {
+  margin: 7px auto;
+  font-size: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap; /* Prevents text wrapping */
+  overflow: hidden; 
+}
+
+@media (max-width: 768px) {
+  .login {
+    width: 80%; /* Adjust the width of the login box */
+    height: auto;
+    padding: 10px;
+  }
+  
+  .loginname {
+    font-size: 35px; /* Reduce font-size for smaller screens */
+    display: flex;
+    flex-direction: column; /* Stack the letters vertically */
+    text-align: center; /* Ensure the text is centered */
+    letter-spacing: 0; /* Optional: Adjust letter spacing */
+    width: 100%; /* Ensure the text fits the width */
+  }
+}
+
+input {
+  width: 100%; 
+  padding: 10px; 
+  border-radius: 4px; 
+  background: none;
+  outline: none;
+  border: none;
+}
+.btn {
+  border-radius: 10px;
+  margin: 7px auto;
+  padding: 10px;
+  width: 100%; 
+  background-color: purple;
+  color: white;
+}
+.password {
+  margin: 5px 13px 5px auto;
+  text-align: right;
+}
+.create {
+  margin: 7px auto;
+  text-align: center;
+}
